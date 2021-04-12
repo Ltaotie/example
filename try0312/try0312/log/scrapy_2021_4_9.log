@@ -1,0 +1,35 @@
+2021-04-09 22:39:31 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: try0312)
+2021-04-09 22:39:31 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 19.10.0, Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.2.1, Platform Windows-10-10.0.18362-SP0
+2021-04-09 22:39:31 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'try0312', 'CONCURRENT_REQUESTS': 5, 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'HTTPCACHE_ENABLED': True, 'HTTPCACHE_EXPIRATION_SECS': 0.01, 'LOG_FILE': 'log/scrapy_2021_4_9.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'try0312.spiders', 'REDIRECT_ENABLED': False, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['try0312.spiders']}
+2021-04-09 22:39:31 [scrapy.extensions.telnet] INFO: Telnet Password: ac14038819042a6d
+2021-04-09 22:39:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-04-09 22:39:31 [58try] INFO: Reading start URLs from redis key '58try:xiaoqu_url' (batch size: 5, encoding: utf-8
+2021-04-09 22:39:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'try0312.middlewares.RandomUserAgent',
+ 'try0312.middlewares.ProxyMiddleWare',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2021-04-09 22:39:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-04-09 22:39:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['try0312.pipelines.ParserPipeline',
+ 'try0312.pipelines.Second_hands_Pipeline',
+ 'try0312.pipelines.MysqlPipeline']
+2021-04-09 22:39:31 [scrapy.core.engine] INFO: Spider opened
+2021-04-09 22:39:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-04-09 22:39:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
